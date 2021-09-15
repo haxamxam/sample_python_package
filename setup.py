@@ -20,7 +20,13 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "example_package"},
+    py_modules=['example'],
+
+    # entry_points={
+    #     'console_scripts': ['mycli=mymodule:cli'],
+    # },
+    include_package_data=True,
+    #packages=setuptools.find_packages(where="example_package"),
     python_requires=">=3.6",
 )
