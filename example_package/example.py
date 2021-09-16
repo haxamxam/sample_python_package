@@ -1,6 +1,7 @@
 import pathlib
 
-script_dir = pathlib.Path(__file__).resolve().parent
+script_dir = pathlib.Path().resolve()
+#script_dir = pathlib.Path(__file__).resolve().parent
 
 def add_one(number):
     return number + 1
