@@ -1,32 +1,16 @@
 import setuptools
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+with open("README", 'r') as f:
+    long_description = f.read()
 
-setuptools.setup(
-    name="examplepkghaxamxam",
-    version="0.0.3",
-    author="Hamza Suhail",
-    author_email="author@example.com",
-    description="A small example package",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
-    project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
-    },
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    package_dir={"": "example_package"},
-    py_modules=['example'],
-
-    # entry_points={
-    #     'console_scripts': ['mycli=mymodule:cli'],
-    # },
-    include_package_data=True,
-    #packages=setuptools.find_packages(where="example_package"),
-    python_requires=">=3.6",
+setup(
+   name='example_package',
+   version='0.0.1',
+   description='A useful module',
+   license="MIT",
+   long_description='long description',
+   author='Hamza Suhail',
+   author_email='foomail@foo.com',
+   url="https://github.com/haxamxam/testPackage",
+   packages=['example_package'],  #same as name
 )
